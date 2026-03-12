@@ -29,12 +29,12 @@ import { getFirestore, doc, setDoc, onSnapshot } from 'firebase/firestore';
 const appId = typeof __app_id !== 'undefined' ? __app_id : 'deutsch-mastery-app';
 let app, auth, db;
 try {
-  const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-  app = initializeApp(firebaseConfig);
-  auth = getAuth(app);
-  db = getFirestore(app);
-} catch (e) {
-  console.error("Error al inicializar Firebase", e);
+  apiKey: "AIzaSyAHtH9TNxxm03NbKyeU6uQAazqcHNaYZog",
+  authDomain: "deutsch-mastery-app.firebaseapp.com",
+  projectId: "deutsch-mastery-app",
+  storageBucket: "deutsch-mastery-app.firebasestorage.app",
+  messagingSenderId: "495317649948",
+  appId: "1:495317649948:web:5fd90b6882aac79b132dd9"
 }
 
 // --- DATOS DE EVALUACIÓN DIAGNÓSTICA (22 PREGUNTAS DE ALEMÁN: BÁSICO A AVANZADO) ---
